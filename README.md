@@ -22,9 +22,9 @@ graph TB
     %% =========================================================
     %% 1. PIPELINE NODE DEFINITIONS (High Contrast Styling)
     %% =========================================================
-    User[👤 Client User Interface <br> HTML5 / jQuery State Machine]
+    User[👤 Client User Interface <br> HTML5 / Native WebSockets UI]
     
-    FastAPI{⚡ FastAPI Service Gateway <br> Router Core Layer}
+    FastAPI{⚡ FastAPI Service Gateway <br> Persistent WebSocket Connection}
     
     Prompt[📝 Domain-Constrained Prompt <br> Facilities Management Rules]
     
@@ -37,14 +37,14 @@ graph TB
     
     LLM[🚀 Target Inference Core <br> Model Processing Engine]
     
-    Output[📤 Atomic JSON Content Payload]
+    Output[📤 Real-Time WebSocket Text Frame Stream]
 
     %% =========================================================
-    %% 2. LINEAR STEP-BY-STEP DATAFLOW (Error-Free Syntax)
+    %% 2. LINEAR STEP-BY-STEP DATAFLOW (WebSocket Realignment)
     %% =========================================================
-    User-->|1. Submit Research Topic & Parameters|FastAPI
+    User-->|1. Establish Persistent Handshake ws://|FastAPI
     FastAPI-->|2. Inject Hardcoded Sector Guardrails|Prompt
-    Prompt-->|3. Initialize Agent State Loop|LangChain
+    Prompt-->|3. Initialize Active Agent State Loop|LangChain
     
     LangChain-->|4A. Conditional Web Scrape Request|Tool_DDG
     LangChain-->|4B. Conditional Fact Check Request|Tool_Wiki
@@ -54,9 +54,9 @@ graph TB
     
     Context-->|6. Route Compressed In-Context Window|LangChain
     LangChain-->|7. Pass Augmented Payload Block|LLM
-    LLM-->|8. Process Full Structural Copy Text Loop|FastAPI
-    FastAPI-->|9. Assemble Final Marketing Content Array|Output
-    Output-->|10. Render Complete Text View on Dashboard|User
+    LLM-->|8. Compile Full Structural Content Loop|FastAPI
+    FastAPI-->|9. Broadcast Completed Response String Frame|Output
+    Output-->|10. Stream Async Text Appends to Chat UI|User
 
     %% =========================================================
     %% 3. REFINED GRAPH ACCENTS (Dark-Mode Harmony)
