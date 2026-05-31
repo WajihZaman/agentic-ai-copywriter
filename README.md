@@ -116,7 +116,7 @@ graph TB
 
 #### 1. Clone and Navigate to Infrastructure Workspace
 ```bash
-git clone https://github.com
+git clone https://github.com/WajihZaman/agentic-ai-copywriter
 cd agentic-ai-copywriter
 ```
 
