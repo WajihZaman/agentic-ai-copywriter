@@ -92,7 +92,7 @@
 
     function connect() {
       const chatBox = document.getElementById("chat-box");
-      ws = new WebSocket("ws://127.0.0.1:8000/chat");
+      ws = new WebSocket("ws://127.0.0.1:7860/chat");
 
       ws.onopen = () => {
         chatBox.innerHTML += `<div class="msg bot">✅ Connected to Syd</div>`;
