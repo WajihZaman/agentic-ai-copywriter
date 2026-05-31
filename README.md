@@ -80,6 +80,7 @@ graph TB
 * **Domain-Constrained Prompt Engineering:** The LLM's system state machine is strictly locked down using custom prompt templates. The agent rejects requests outside the Facilities Services matrix, guaranteeing highly professional text generation tailored specifically for B2B engineering platforms.
 * **Autonomous Multi-Tool Orchestration:** Implements dynamic query analysis via LangChain. The engine intelligently judges when to query the live web index via DuckDuckGo for trending facilities problems or parse Wikipedia for operational standards definitions.
 * **Decoupled Full-Stack Architecture:** Exposes non-blocking REST endpoints via FastAPI to receive web parameters from an optimized HTML5/jQuery interface, delivering structured text arrays in a single, stable atomic payload.
+* **Dynamic Grounding & Citation Attribution Matrix:** To combat large language model hallucination and ensure factual traceability, the backend agent parses metadata tokens from search arrays to append live source citation URLs directly onto generated marketing assets. The system architecture is built to recognize and account for raw web citation decay (unstable or non-existent external third-party links), isolating citation text objects to preserve system stability and maintain factual data pedigree without breaking frontend JSON formatting pipelines.
 
 ---
 
