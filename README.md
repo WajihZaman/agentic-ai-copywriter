@@ -1,10 +1,10 @@
-# 🤖 Autonomous Agentic AI Copywriter & Market Research Engine
+# Autonomous Agentic AI Copywriter & Market Research Engine
 
 An enterprise-grade, domain-constrained Agentic AI application engineered to automate market research, trend analysis, and multi-channel content generation specifically for the Facilities Services and Maintenance sector. Powered by LangChain, the core engine leverages dynamic tool-calling layers to crawl the web, synthesize live industry insights, and stream structured B2B copy text blocks over full-duplex WebSocket connections.
 
 ---
 
-### 📐 Architectural Parameters & System Scope
+### Architectural Parameters & System Scope
 * **Role:** Lead Full-Stack AI Engineer & Knowledge Architect
 * **Core Orchestrator:** LangChain `create_tool_calling_agent` & `AgentExecutor` (Max Iterations: 3)
 * **Agentic Toolkit:** DuckDuckGo Web Search Engine + Character-Constrained Wikipedia API Parser (Max Chars: 221)
@@ -14,7 +14,7 @@ An enterprise-grade, domain-constrained Agentic AI application engineered to aut
 
 ---
 
-### 🗺️ System Data-Flow & Tool-Orchestration Architecture
+### System Data-Flow & Tool-Orchestration Architecture
 
 The system uses a highly decoupled layout. The frontend UI establishes a persistent WebSocket connection to the FastAPI gateway. The gateway parses the incoming prompt payload and triggers an active LangChain agent graph. The model dynamically evaluates query intent, decides whether to execute direct reasoning or trigger external API search tools, structures the final response array using a Pydantic parser, and transmits the compiled HTML/Markdown payload over the socket interface in a single execution frame.
 
@@ -90,7 +90,7 @@ graph TB
 
 ---
 
-### 📂 Repository File System Directory Layout
+### Repository File System Directory Layout
 
 ```text
 ├── .env.template          # Global API key configuration blueprint
@@ -112,7 +112,7 @@ graph TB
 
 ---
 
-### 🚀 Local Quick-Start Workspace Execution
+### Local Quick-Start Workspace Execution
 
 #### 1. Clone and Navigate to Infrastructure Workspace
 ```bash
