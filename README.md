@@ -1,10 +1,10 @@
-# 🤖 Autonomous Agentic AI Copywriter & Market Research Engine
+# Autonomous Agentic AI Copywriter & Market Research Engine
 
 An enterprise-grade, domain-constrained Agentic AI application engineered to automate market research, trend analysis, and multi-channel content generation specifically for the Facilities Services and Maintenance sector. Powered by LangChain, the core engine leverages dynamic tool-calling layers to crawl the web, synthesize live industry insights, and compile structured marketing blueprints without human data-entry overhead.
 
 ---
 
-### 📐 Architectural Parameters & Scope
+### Architectural Parameters & Scope
 * **Role:** Lead AI Solutions Developer & Knowledge Engineer
 * **Core Framework:** LangChain (Tool Calling, Routing, & Context Assemblers)
 * **Agentic Tools:** DuckDuckGo Search API Component + Wikipedia Search Parser
@@ -12,7 +12,7 @@ An enterprise-grade, domain-constrained Agentic AI application engineered to aut
 
 ---
 
-### 🗺️ System Data-Flow & Tool-Orchestration Architecture
+### System Data-Flow & Tool-Orchestration Architecture
 
 The system uses a decoupled layout. The frontend UI transmits target search boundaries to a FastAPI gateway, which initializes an autonomous LangChain execution loop to pull live web insights, process context in memory, and deliver a completed data block in a single HTTP POST request.
 
@@ -75,7 +75,7 @@ graph TB
 
 ---
 
-### 🚀 Key Technical Indicators & Engineering Implementations
+### Key Technical Indicators & Engineering Implementations
 
 * **Domain-Constrained Prompt Engineering:** The LLM's system state machine is strictly locked down using custom prompt templates. The agent rejects requests outside the Facilities Services matrix, guaranteeing highly professional text generation tailored specifically for B2B engineering platforms.
 * **Autonomous Multi-Tool Orchestration:** Implements dynamic query analysis via LangChain. The engine intelligently judges when to query the live web index via DuckDuckGo for trending facilities problems or parse Wikipedia for operational standards definitions.
@@ -83,7 +83,7 @@ graph TB
 
 ---
 
-### 📂 Repository File System Directory Layout
+### Repository File System Directory Layout
 
 ```text
 ├── .env.template          # Global API key configuration blueprint
@@ -98,7 +98,7 @@ graph TB
 
 ---
 
-### 🚀 Local Quick-Start Workspace Execution
+### Local Quick-Start Workspace Execution
 
 #### 1. Clone and Navigate to Infrastructure Workspace
 ```bash
