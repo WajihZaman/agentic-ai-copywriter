@@ -40,7 +40,7 @@ graph TB
     
     LLM[🚀 Target Inference Core <br> Model Processing Engine]
     
-    Output[📤 Real-Time WebSocket Frame Stream]
+    Output[📤 Complete WebSocket HTML Frame]
 
     %% =========================================================
     %% 2. LINEAR STEP-BY-STEP DATAFLOW (Stateless WebSocket Loop)
@@ -60,7 +60,7 @@ graph TB
     Context-->|6. Validate JSON via Pydantic Schema|LangChain
     LangChain-->|7. Pass Structured Context Window|LLM
     LLM-->|8. Convert Generated Output to HTML / Markdown|FastAPI
-    FastAPI-->|9. Broadcast Completed Response String Frame|Output
+    FastAPI-->|9. Broadcast Finished Response Text Block|Output
     Output-->|10. Render Complete Text View on Chat UI|User
 
     %% =========================================================
