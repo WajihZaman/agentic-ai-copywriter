@@ -26,37 +26,40 @@ graph TB
     
     FastAPI{⚡ FastAPI Service Gateway <br> Persistent WebSocket Connection}
     
-    Prompt[📝 Domain-Constrained Prompt <br> Facilities Management Rules]
+    Prompt[📝 System Prompt & Context Layer <br> Sector Domain Bounds Check]
     
     LangChain[🔀 LangChain Orchestration Core <br> Dynamic Tool Router]
     
+    Tool_Direct[💬 Direct Response Path <br> No External Lookup Needed]
     Tool_DDG[🔍 DuckDuckGo API Wrapper <br> Live Web Index Scraper]
-    Tool_Wiki[📚 Wikipedia API Layer <br> Historical Pattern Matcher]
+    Tool_Wiki[📚 Wikipedia API Layer <br> Reference Pattern Parser]
     
-    Context[🧠 Context Synthesis Engine <br> Information Merging Layer]
+    Context[🧠 Context Synthesis Engine <br> Real-Time Token Merger]
     
-    LLM[🚀 Target Inference Core <br> Model Processing Engine]
+    LLM[🚀 Target Inference Core <br> Content Generation Model]
     
-    Output[📤 Real-Time WebSocket Text Frame Stream]
+    Output[📤 WebSocket Output Stream Frame]
 
     %% =========================================================
-    %% 2. LINEAR STEP-BY-STEP DATAFLOW (WebSocket Realignment)
+    %% 2. LINEAR STEP-BY-STEP DATAFLOW (Stateless WebSocket Loop)
     %% =========================================================
-    User-->|1. Establish Persistent Handshake ws://|FastAPI
-    FastAPI-->|2. Inject Hardcoded Sector Guardrails|Prompt
-    Prompt-->|3. Initialize Active Agent State Loop|LangChain
+    User-->|1. Transmit Prompt Query via ws://|FastAPI
+    FastAPI-->|2. Evaluate Query Relevance & Bounds|Prompt
+    Prompt-->|3. Pass Validated Query to Routing Graph|LangChain
     
-    LangChain-->|4A. Conditional Web Scrape Request|Tool_DDG
-    LangChain-->|4B. Conditional Fact Check Request|Tool_Wiki
+    LangChain-->|4A. Route Direct Response|Tool_Direct
+    LangChain-->|4B. Route Live Web Search|Tool_DDG
+    LangChain-->|4C. Route Factual Lookup|Tool_Wiki
     
-    Tool_DDG-->|5A. Return Live Search Tokens|Context
-    Tool_Wiki-->|5B. Return Encyclopedic Reference String|Context
+    Tool_Direct-->|5A. Pass Raw Prompt Context|Context
+    Tool_DDG-->|5B. Return Scraped Search Metadata|Context
+    Tool_Wiki-->|5C. Return Reference Text Tokens|Context
     
-    Context-->|6. Route Compressed In-Context Window|LangChain
-    LangChain-->|7. Pass Augmented Payload Block|LLM
-    LLM-->|8. Compile Full Structural Content Loop|FastAPI
+    Context-->|6. Aggregate Data to In-Context Window|LangChain
+    LangChain-->|7. Submit Context-Informed Prompt|LLM
+    LLM-->|8. Process Completed Copy Text Object|FastAPI
     FastAPI-->|9. Broadcast Completed Response String Frame|Output
-    Output-->|10. Stream Async Text Appends to Chat UI|User
+    Output-->|10. Render Complete Text View on Chat UI|User
 
     %% =========================================================
     %% 3. REFINED GRAPH ACCENTS (Dark-Mode Harmony)
@@ -69,9 +72,11 @@ graph TB
     style LLM fill:#062040,stroke:#3b82f6,stroke-width:2px,color:#ffffff
     style Context fill:#062f21,stroke:#10b981,stroke-width:2px,color:#ffffff
     
+    style Tool_Direct fill:#272510,stroke:#eab308,stroke-width:2px,color:#ffffff
     style Tool_DDG fill:#272510,stroke:#eab308,stroke-width:2px,color:#ffffff
     style Tool_Wiki fill:#272510,stroke:#eab308,stroke-width:2px,color:#ffffff
 ```
+
 
 ---
 
