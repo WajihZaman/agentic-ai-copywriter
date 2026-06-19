@@ -130,3 +130,11 @@ cp .env.template .env
 ```bash
 python main.py
 ```
+
+This project is part of the AI applications, agentic workflows, and LLM‑powered tools built by Wajih Uz Zaman.
+
+If you use or modify this project, please provide attribution by linking back to this repository or mentioning:
+
+Author: Wajih Uz Zaman  
+GitHub: https://github.com/WajihZaman  
+LinkedIn: https://www.linkedin.com/in/ai-engineer-wajih/
